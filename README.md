@@ -1,84 +1,9 @@
 # hospital-management
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
-int main()
-{
-int i,maxwards[100],a[100],r,k,temp; 
-int wf[100];
-char name[100][100];
+In India ,one of the main problem is the lack of beds in the hospital .Due to lack of beds the patients are need to stay and treated in the hospital balcony’s. To overcome this problem this coding is used .By using this coding we can check the number of beds, number of beds filled and number of available beds in every hospital in and around the state/district .By checking, the patients can be properly shifted to another hospital which has sufficient number of beds. Therefore the patients can be safely shifted to another hospital and treated properly.
 
-//printf("enter the no of hospitals");
-//scanf("%d",&n);
-
-for(i=0;i<=4;i++)
-{
-printf("enter the hospital name\n");
- scanf("%s",&name[i]);                 // give hospital name without space
-//scanf("%[^\n]", &name[i]); 
-//fgets(name[i],16,stdin);
- //gets(&name[i]);
-
-printf("enter the no of max wards\n");
-scanf("%d",&maxwards[i]);//number of max wards in the hospital
-
-printf("enter the wards filled\n");
-scanf("%d",&wf[i]);// number of wards filled
-
-a[i]=t[i]-m[i];
-printf("available wards %d\n",a[i]);//number of available wards
-}
-
-printf("no of wards needed\n");
-scanf("%d",&r);
-
-for(i=0;i<=4;i++)
-{
-while(a[i]>=r)
-{
-k=i;
-switch(k)
-{
-case 0:
-{
-printf("%s",name[0]);//to display the name
-a[0]=a[0]+r;
-r=0;
-break;
-}
-case 1:
-{ 
-printf("%s",name[1]);
-a[1]=a[1]+r;
-r=0;
-break;
-}
-case 2:
-{
- printf("%s",name[2]);
-a[2]=a[2]+r;
-r=0;
-break;
-}
-case 3:
-{ 
-printf("%s",name[3]);
-a[3]=a[3]+r;
-r=0;
-break;
-}
-case 4:
-{
- printf("%s",name[4]);
-a[4]=a[4]+r;
-r=0;
-break;
-}
-}
-if(r==0)
-exit(0);
-}
-}
-return 0;
-//getch();
-}
+                                             “The Focus of
+                                                entertaining 
+                                          is impressing others;
+                                                  The focus of
+                                                true hospitality
+                                             is serving others”
